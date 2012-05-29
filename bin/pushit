@@ -1,0 +1,4 @@
+#!/bin/bash
+
+TOP=$(unset CDPATH; cd $(dirname $0)/../; pwd)
+node ${TOP}/lib/pushit.js "$@"

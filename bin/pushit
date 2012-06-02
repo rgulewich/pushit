@@ -1,4 +1,7 @@
 #!/bin/bash
 
-TOP=$(unset CDPATH; cd $(dirname $0)/../; pwd)
+ME=$(readlink $0)
+[[ -z "$ME" ]] && ME=$0
+
+TOP=$(unset CDPATH; cd $(dirname $ME)/../; pwd)
 node ${TOP}/lib/pushit.js "$@"

@@ -30,3 +30,30 @@ Print the default host with:
 
     pushit --show-default
 
+## Config files
+
+There are two config files for pushit:
+
+* `$HOME/.pushitrc` stores the default host information
+* `$HOME/.pushit-repos` stores mappings of git repos to locations on the
+  remote host to copy the files.
+
+### .pushitrc format
+
+Currently the only thing you can set is `defaultHost`, which is set by
+`pushit --default myhost`.  The format of the default host is anything that's
+acceptable by ssh or scp.  This is valid:
+
+```json
+{
+  "defaultHost": "headnode"
+}
+```
+
+As is this:
+
+```json
+{
+  "defaultHost": "root@10.99.99.7"
+}
+```

@@ -1,15 +1,17 @@
 {
-  "name": "pushit",
-  "description": "http://www.youtube.com/watch?v=2VMx39XZjoo",
-  "version": "1.0.0",
-  "author": "Rob (robert.gulewich@joyent.com)",
-  "private": true,
-  "dependencies": {
-    "nopt": "1.0",
-    "vasync": "1.3",
-    "verror": "1.1.0"
-  },
-  "engines": {
-    "node": ">=0.6"
-  }
+    "name": "pushit",
+    "description": "scp files to a host based on your current git repo",
+    "version": "1.0.0",
+    "author": "Rob Gulewich <rob.gulewich@gmail.com>",
+    "dependencies": {
+        "dashdash": "1.7.0",
+        "vasync": "1.3",
+        "verror": "1.1.0"
+    },
+    "engines": {
+        "node": ">=0.6"
+    },
+    "bin": {
+        "pushit": "lib/pushit.js"
+    }
 }

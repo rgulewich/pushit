@@ -1,7 +1,7 @@
 {
     "name": "pushit",
     "description": "scp files to a host based on your current git repo",
-    "version": "1.0.0",
+    "version": "0.2.0",
     "author": "Rob Gulewich <rob.gulewich@gmail.com>",
     "dependencies": {
         "dashdash": "1.7.0",
@@ -10,6 +10,10 @@
     },
     "engines": {
         "node": ">=0.6"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/rgulewich/pushit.git"
     },
     "bin": {
         "pushit": "lib/pushit.js"

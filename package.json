@@ -13,5 +13,6 @@
     },
     "bin": {
         "pushit": "lib/pushit.js"
-    }
+    },
+    "license": "MIT"
 }
